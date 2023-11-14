@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Switch-case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <h2 class="unit_converter_header">Unit converter</h2>
+  <section class="unit_converter">
+    <input placeholder="0" type="number" title="add a whole number!" id="input" />
+    
+    <select id="unitdropdown">
+        <option value="lbs2kg">Convert from lbs to kg</option>
+        <option value="kg2lbs">Convert from kg to lbs</option>
+        <option value="inch2cm">Convert from inches to cm</option>
+        <option value="cm2inch">Convert from cm to inches</option>
+        <option value="mile2km">Convert from miles to km</option>
+        <option value="km2mile">Convert from km to miles</option>
+      </select>
+
+		  <button onclick="convertUnit()">Convert units</button>
+      <p class="result" id="resultTxt"></p>
+    </section>
+
+    <h2 class="bmi_calc_header">BMI calculator</h2>
+    <section class="bmi_calc">
+      <input placeholder="Enter weight (kg)" type="number" id="inputbmiweight" />
+      <input placeholder="Enter height (meters)" title="Ex 1.77 for 1.77m" type="number" id="inputbmiheight" />
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p class="resultBmi" id="resulttxtbmi"></p>
+    </section>
+
+    
+    
+  </body>
+</html>
